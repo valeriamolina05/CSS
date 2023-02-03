@@ -1,0 +1,26 @@
+*{
+    background-color: rgb(148, 198, 214);
+    color: rgb(178, 63, 63);
+    font-family: 'PT Sans Narrow', sans-serif;
+
+}
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    align-items: center;
+}
+li{
+    display: inline-block;
+    padding: 8px 10px;
+}
+li:hover{
+    background-color: rgb(220, 101, 125);
+    border-radius: 7px;
+    cursor: pointer;
+}
+.contenedor3{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
