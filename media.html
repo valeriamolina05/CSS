@@ -5,36 +5,165 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Responsive</title>
+    <link rel="stylesheet" href="css/media.css">
+    <title>Portafolio</title>
 </head>
 <body>
-    <h1 class="display-1"></h1>
-    <img src="img/pet.jpg" class="rounded float-start" alt="...">
-    
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg style="background-color: #e3f2fd;>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Margarita Fotógrafa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Servicios
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Servicio 1</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Servicio 2</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Servicio 3 </a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+   
 
-    <form>
-        <div class="row mb-3">
-          <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre Usuario</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3">
+    <section class="carrusel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/boda.jfif" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/boda.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/boda1.jfif" class="d-block w-100" alt="...">
           </div>
         </div>
-        <div class="row mb-3">
-          <label for="inputPassword3" class="col-sm-2 col-form-label">Contraseña</label>
-          <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword3">
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
-      </form> <hr>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 
-      <div class="card" style="width: 18rem;">
-        <img src="img/turnos.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <section class="nosotros my-5">
+      <h2 class="text-center my-5">Quiénes Somos</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, autem ipsa nostrum cupiditate excepturi dolor tempore ipsum accusamus ducimus quam nihil? Maxime dignissimos tenetur earum quaerat quisquam perferendis laudantium obcaecati.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni temporibus, praesentium ab nisi nobis quis rerum maxime quaerat cupiditate eum, impedit ex quisquam unde in dolorem quod eius modi beatae?</p>
+          </div>
+          <div class="col-6">
+            <img class="img-fluid" src="img/fotog.avif" alt="">
+          </div>
         </div>
       </div>
+    </section>
 
+    <section class="nosotros my-5">
+      <h2 class="text-center my-5">Nuestros Servicios</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="card text-center" >
+              <img src="img/manu.jfif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">BODAS</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary text-center">Ver Más</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card text-center" >
+              <img src="img/bebe.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">BEBÉS</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary text-center">Ver Más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card text-center" >
+              <img src="img/comunion.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PRIMERA COMUNIÓN</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary text-center">Ver Más</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="Contáctenos bg-info py-5" >
+      <h2 class="text-center">Contáctanos</h2>
+      <div class="container">
+        <form class="row">
+          <div class="mb-3 col-6">
+            <label for="Nombre" class="form-label">Nombres</label>
+            <input type="text" class="form-control" id="Nombre" aria-describedby="nombre">
+            <div id="nombre" class="form-text">Mensaje a mostrar para nombre.</div>
+          </div>
+          <div class="mb-3 col-6">
+            <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Mensaje a mostrar para correo. </div>
+          </div>
+          <div class="mb-3 col-6">
+            <label for="asunto" class="form-label">Asunto</label>
+            <input type="text" class="form-control" id="asunto" aria-describedby="asunto">
+            <div id="asunto" class="form-text">Mensaje a mostrar para asunto.</div>
+          </div>
+          <div class="mb-3 col-6">
+            <label for="Mensaje">Mensaje</label>
+            <textarea class="form-control" name="mensaje" id="" cols="30" rows="5"></textarea>
+          </div>
+
+
+          <center><button type="submit" class="btn btn-primary">ENVIAR</button></center>
+        </form>
+      </div>
+     
+    </section>
+
+    
 
 
     
